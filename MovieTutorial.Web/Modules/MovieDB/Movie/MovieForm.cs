@@ -12,4 +12,5 @@ public class MovieForm
     public int Year { get; set; }
     public DateTime ReleaseDate { get; set; }
     public int Runtime { get; set; }
+    public MovieKind Kind { get; set; }
 }
