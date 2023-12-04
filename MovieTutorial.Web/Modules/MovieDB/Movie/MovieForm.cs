@@ -1,6 +1,3 @@
-﻿using Serenity.ComponentModel;
-using System;
-
 namespace MovieTutorial.MovieDB.Forms;
 
 [FormScript("MovieDB.Movie")]
@@ -8,7 +5,9 @@ namespace MovieTutorial.MovieDB.Forms;
 public class MovieForm
 {
     public string Title { get; set; }
+    [TextAreaEditor(Rows = 3)]
     public string Description { get; set; }
+    [TextAreaEditor(Rows = 8)]
     public string Storyline { get; set; }
     public int Year { get; set; }
     public DateTime ReleaseDate { get; set; }

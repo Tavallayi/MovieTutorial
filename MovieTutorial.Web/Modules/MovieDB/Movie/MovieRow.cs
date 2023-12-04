@@ -1,13 +1,7 @@
-﻿using Serenity.ComponentModel;
-using Serenity.Data;
-using Serenity.Data.Mapping;
-using System;
-using System.ComponentModel;
-
 namespace MovieTutorial.MovieDB;
 
 [ConnectionKey("Default"), Module("MovieDB"), TableName("Movie")]
-[DisplayName("Movie"), InstanceName("Movie")]
+[DisplayName("Movies"), InstanceName("Movie")]
 [ReadPermission("Administration:General")]
 [ModifyPermission("Administration:General")]
 [ServiceLookupPermission("Administration:General")]
@@ -31,7 +25,7 @@ public sealed class MovieRow : Row<MovieRow.RowFields>, IIdRow, INameRow
     [DisplayName("Release Date")]
     public DateTime? ReleaseDate { get => fields.ReleaseDate[this]; set => fields.ReleaseDate[this] = value; }
 
-    [DisplayName("Runtime")]
+    [DisplayName("Runtime (mins)")]
     public int? Runtime { get => fields.Runtime[this]; set => fields.Runtime[this] = value; }
 
     public class RowFields : RowFieldsBase
