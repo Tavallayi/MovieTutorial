@@ -1,6 +1,6 @@
-﻿import { ColumnsBase, fieldsProxy } from '@serenity-is/corelib';
-import { Column } from '@serenity-is/sleekgrid';
-import { MovieRow } from './MovieRow';
+﻿import { ColumnsBase, fieldsProxy } from "@serenity-is/corelib";
+import { Column } from "@serenity-is/sleekgrid";
+import { MovieRow } from "./MovieRow";
 
 export interface MovieColumns {
     MovieId: Column<MovieRow>;
