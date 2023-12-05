@@ -73,7 +73,7 @@ public partial class Startup
             options.SerializerSettings.ContractResolver = new DefaultContractResolver();
             options.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
         });
-        
+
         services.AddAuthentication(o =>
         {
             o.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
@@ -169,7 +169,8 @@ public partial class Startup
 
         app.UseDynamicScripts();
 
-        app.UseEndpoints(endpoints => {
+        app.UseEndpoints(endpoints =>
+        {
             endpoints.MapControllers();
         });
 

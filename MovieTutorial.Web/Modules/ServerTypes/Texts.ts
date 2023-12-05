@@ -91,6 +91,7 @@ namespace MovieTutorial.Texts {
             }
 
             namespace Movie {
+                export const CastList: string;
                 export const Description: string;
                 export const GenreList: string;
                 export const Kind: string;
@@ -102,12 +103,32 @@ namespace MovieTutorial.Texts {
                 export const Year: string;
             }
 
+            namespace MovieCast {
+                export const Character: string;
+                export const MovieCastId: string;
+                export const MovieId: string;
+                export const MovieTitle: string;
+                export const PersonFullName: string;
+                export const PersonId: string;
+            }
+
             namespace MovieGenres {
                 export const GenreId: string;
                 export const GenreName: string;
                 export const MovieGenreId: string;
                 export const MovieId: string;
                 export const MovieTitle: string;
+            }
+
+            namespace Person {
+                export const BirthDate: string;
+                export const BirthPlace: string;
+                export const FirstName: string;
+                export const FullName: string;
+                export const Gender: string;
+                export const Height: string;
+                export const LastName: string;
+                export const PersonId: string;
             }
         }
     }
@@ -223,7 +244,9 @@ namespace MovieTutorial.Texts {
             MovieDB: {
                 Genre: {},
                 Movie: {},
-                MovieGenres: {}
+                MovieCast: {},
+                MovieGenres: {},
+                Person: {}
             }
         },
         Forms: {
